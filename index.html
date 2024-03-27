@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A3 With Daisy UI</title>
+    <!-- tailwind and daisy ui setup sttt  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <!-- end  -->
+    <!-- ext css stt -->
+    <link rel="stylesheet" href="style.css">
+    <!-- end  -->
+    <!-- google font stt  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- end  -->
+</head>
+<body>
+    <header>
+        <nav>
+
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a class="text-[#FF4240]">Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Page</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="text-3xl font-extrabold">Hockey<sup class="text-[#FF4240]">,</sup>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-[#FF4240]">Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Page</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                      </button>
+                  <a class="btn text-white bg-[#FF4240]">Get Ticket</a>
+                </div>
+              </div>
+
+        </nav>
+    </header>
+
+
+
+    <main>
+        <!-- slider stt -->
+      <section class="max-w-[1350px] md:w-[1350px] mx-auto my-10">
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class="w-full border-4 border-red-500 rounded-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class="w-full border-4 border-blue-500 rounded-3xl" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class="w-full border-4 border-purple-500 rounded-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+      </section>
+        <!-- slider end -->
+        <section class="bg-black max-w-[500px] min-h-[100px] p-4 float-end" id="pos">
+            <div class="text-white">
+                <h1 class="text-lg">Meet all the heroes from the field</h1>
+                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+        </section>
+        <!-- end position  -->
+
+        <!-- percentage stt  -->
+       <section class="max-w-[1350px] md:w-[1350px] mx-auto my-10">
+        <div class="text-center">
+            <h1 class="text-lg lg:text-3xl font-bold">Professional Hockeys Club</h1>
+            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row justify-between my-7">
+
+            <div class="text-center">
+                <div class="radial-progress text-primary text-orange-500" style="--value:87;" role="progressbar">87%</div>
+                <h1 class="text-2xl">Prayer Facility</h1>
+                <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="text-center">
+                <div class="radial-progress text-primary text-green-500" style="--value:87;" role="progressbar">95%</div>
+                <h1 class="text-2xl">Experienced Coach</h1>
+                <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="text-center">
+                <div class="radial-progress text-primary text-yellow-500" style="--value:87;" role="progressbar">90%</div>
+                <h1 class="text-2xl">Senior Player</h1>
+                <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="text-center">
+                <div class="radial-progress text-primary text-blue-500" style="--value:87;" role="progressbar">80%</div>
+                <h1 class="text-2xl">Training Ground</h1>
+                <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+
+        </div>
+       </section>
+        <!-- end -->
+
+
+        <!-- card stt  -->
+        <section class="max-w-[1350px] md:w-[1350px] mx-auto my-[90px]">
+            <div class="text-center">
+                <h1 class="text-lg lg:text-3xl font-bold">Program Sections</h1>
+                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+            </div>
+
+
+            <div class="flex flex-col lg:flex-row justify-center gap-3 p-5">
+                <div>
+                    <div class="card  bg-base-100 shadow-xl image-full">
+                        <figure><img class="w-full" src="./Images/2.png" alt="Shoes" /></figure>
+                        <div class="card-body flex items-center justify-center">
+                           <div class="space-y-3">
+                            <h2 class="card-title">Junior Program</h2>
+                          <p class="max-w-[445px] lg:w-[445px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                          <div class="card-actions justify-start">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                           </div>
+                        </div>
+                      </div>
+                </div>
+                <div>
+                    <div class="card  bg-base-100 shadow-xl image-full">
+                        <figure><img class="w-full" src="./Images/3.png" alt="Shoes" /></figure>
+                        <div class="card-body flex items-center justify-center">
+                          <div class="space-y-3">
+                            <h2 class="card-title">Teenager Program</h2>
+                          <p class="max-w-[445px] lg:w-[445px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                          <div class="card-actions justify-start">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <!-- card 2  -->
+            <div class="p-4">
+                <div class="card max-w-[1170px] lg:w-[1170px] mx-auto  bg-base-100 shadow-xl image-full">
+                    <figure><img class="w-full" src="./Images/4.png" alt="Shoes" /></figure>
+                    <div class="card-body flex justify-end">
+                       <div class="space-y-3">
+                        <h2 class="card-title">Professional Program</h2>
+                      <p class="max-w-[510px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                      <div class="card-actions justify-start">
+                        <button class="btn  bg-[#FF4240] text-white">Register Now</button>
+                      </div>
+                       </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- end  -->
+           </section>
+        <!-- end  -->
+
+
+        <!-- another card stt  -->
+        <section class="max-w-[1350px] md:w-[1350px] mx-auto my-[60px]">
+            <div class="text-center">
+                <h1 class="text-lg lg:text-3xl font-bold">Our New Products</h1>
+                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 p-4">
+
+                 <div>
+                    <div class="card card-side bg-base-100 shadow-xl">
+                        
+                        <figure><img src="./Images/5.png" alt="Movie"/></figure>
+                        <div class="card-body">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                          <h2 class="card-title">World Cup Flags Football</h2>
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                          <div class="card-actions justify-start">
+                            <h1 class="text-red-500">Price -$22</h1><span><small>Free Delivery</small></span>
+                          </div>
+                        </div>
+                      </div>
+                 </div>
+                 <div>
+                    <div class="card card-side bg-base-100 shadow-xl">
+                        
+                        <figure><img src="./Images/6.png" alt="Movie"/></figure>
+                        <div class="card-body">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                          <h2 class="card-title">World Cup Flags Football</h2>
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                          <div class="card-actions justify-start">
+                            <h1 class="text-red-500">Price -$22</h1><span><small>Free Delivery</small></span>
+                          </div>
+                        </div>
+                      </div>
+                 </div>
+                 <div>
+                    <div class="card card-side bg-base-100 shadow-xl">
+                        
+                        <figure><img src="./Images/7.png" alt="Movie"/></figure>
+                        <div class="card-body">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                          <h2 class="card-title">World Cup Flags Football</h2>
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                          <div class="card-actions justify-start">
+                            <h1 class="text-red-500">Price -$22</h1><span><small>Free Delivery</small></span>
+                          </div>
+                        </div>
+                      </div>
+                 </div>
+                 <div>
+                    <div class="card card-side bg-base-100 shadow-xl">
+                        
+                        <figure><img src="./Images/8.png" alt="Movie"/></figure>
+                        <div class="card-body">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                          <h2 class="card-title">World Cup Flags Football</h2>
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                          <div class="card-actions justify-start">
+                            <h1 class="text-red-500">Price -$22</h1><span><small>Free Delivery</small></span>
+                          </div>
+                        </div>
+                      </div>
+                 </div>
+                 <div>
+                    <div class="card card-side bg-base-100 shadow-xl">
+                        
+                        <figure><img src="./Images/9.png" alt="Movie"/></figure>
+                        <div class="card-body">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                          <h2 class="card-title">World Cup Flags Football</h2>
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                          <div class="card-actions justify-start">
+                            <h1 class="text-red-500">Price -$22</h1><span><small>Free Delivery</small></span>
+                          </div>
+                        </div>
+                      </div>
+                 </div>
+                 <div>
+                    <div class="card card-side bg-base-100 shadow-xl">
+                        
+                        <figure><img src="./Images/10.png" alt="Movie"/></figure>
+                        <div class="card-body">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                          <h2 class="card-title">World Cup Flags Football</h2>
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                          <div class="card-actions justify-start">
+                            <h1 class="text-red-500">Price -$22</h1><span><small>Free Delivery</small></span>
+                          </div>
+                        </div>
+                      </div>
+                 </div>
+
+            </div>
+        </section>
+        <!-- end  -->
+
+
+
+
+        <!-- client question  -->
+        <section class="max-w-[1350px] md:w-[1350px] mx-auto my-[60px]">
+            <div class="text-center">
+                <h1 class="text-lg lg:text-3xl font-bold">Clients Question</h1>
+                <p> Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+
+            <!-- q part  -->
+            <div class="flex flex-col lg:flex-row items-center justify-center gap-3 my-6">
+                <div><img src="Images/11.png" alt=""></div>
+                <div>
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                          Click to open this one and close others
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                          Click to open this one and close others
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-medium">
+                          Click to open this one and close others
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                          Click to open this one and close others
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                          Click to open this one and close others
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <!-- q end  -->
+
+            <div class="text-center">
+                <h1 class="text-lg lg:text-3xl font-bold">Get In Touch</h1>
+                <p> Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+
+        </section>
+        <!-- end  -->
+
+
+        
+    </main>
+
+
+
+    <footer>
+
+    </footer>
+</body>
+</html>
